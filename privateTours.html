@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <title>PrivateTours</title>
+    <link rel="icon" type="image/x-icon" href="/img/logo-Copy.png">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font  Awesome-->
+    <script src="https://kit.fontawesome.com/93947c02c6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body class="m-0" id="privateTours">
+    <!--------------------------------------->
+    <!--             HEADER                -->
+    <!--------------------------------------->
+    <div class="container-fluid w-100 p-0 header">
+      <div class="row w-100 ms-0 me-0 hRow">
+        <!-- Menu -->
+        <div class="col-1 col-lg-2 col-md-2 hMenu1">
+          <div class="hMenu">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="hDropdownMenu">
+            <a href="index.html">HOME</a>
+            <a href="destination.html">DESTINATIONS</a>
+            <a href="privateTours.html">PRIVATE TOURS</a>
+            <a href="singleTour.html">SINGLE TOURS</a>
+            <a href="TourList.html">TOUR LIST</a>
+          </div>
+        </div>
+        <!-- Logo -->
+        <div class="col-11 col-lg-7 col-md-7 hIcon text-center">
+          <img src="img/logoFull.jpeg" alt="">
+        </div>
+        <!-- Contact -->
+        <div class="col col-lg-3 col-md-3 text-center hContactCol">
+          <div class="hContact">
+            <i class="fas fa-phone-alt"></i>
+            <h6 class="d-inline-block">GET IN TOUCH</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--------------------------------------------->
+    <!--          PrivateTour - Sec1             -->
+    <!--------------------------------------------->
+
+    <div class="pTSec1 mt-4">
+        <div class="item p-2 p-md-5">
+            <h4>RECEIVE VIP TREATMENT</h4>
+            <h1>Private Trips</h1>
+        </div>
+    </div>
+
+    <!--------------------------------------------->
+    <!--          PrivateTour - Sec2             -->
+    <!--------------------------------------------->
+
+    <div class="row g-0 text-center mt-5 pTSec2">
+        <h2 class="p-3 w-100">Privatize Any of Our Daytrips</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error dolorem sunt vel modi amet omnis porro at nihil quam odio, similique laborum. Dolore iste reprehenderit quae cumque eos repellat architecto!</p>
+    </div>
+
+    <div class="pTSec2Grid mt-5 mb-5">
+        <div class="item1 ps-md-5 pe-md-5 pt-md-3 pb-md-3 p-2">
+            <h2>Tailor Made Trips</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod quia earum dolore distinctio dignissimos amet, rerum laborum maxime iure recusandae!</p>
+        </div>
+        <div class="item2 ps-md-5 pe-md-5 pt-md-3 pb-md-3 p-2">
+            <h2>Groups</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione officiis nihil libero suscipit amet labore rerum ipsa natus nam unde.</p>
+        </div>
+    </div>
+
+
+    <!--------------------------------------------->
+    <!--          PrivateTour - Sec3             -->
+    <!--------------------------------------------->
+
+    <div class="pTSec3Container p-5">
+        <div class="pTsec3Row1">
+            <h1>Let's Get Started</h1>
+        </div>
+        <div class="container-fluid pTsec3Row2 p-md-5">
+            <div class="row align-items-center pTsec3Row2Items p-4">
+                <div class="col-12 col-md-4">
+                    <i class="fas fa-search"></i>
+                    <p>Select your travel experience</p>
+                </div>
+                <div class="col-12 col-md-4">
+                    <i class="fas fa-hand-pointer"></i>
+                    <p>Choose a depature date</p>
+                </div>
+                <div class="col-12 col-md-4">
+                    <i class="fas fa-mobile-alt"></i>
+                    <p>Call us to book your trip</p>
+                </div>
+                <button type="submit" id="getStartedBtn">GET STARTED!</button>
+            </div>
+        </div>
+
+        
+
+        <div class="pTForm hidden">
+        
+            <div class="row pTourFormRow1 g-0 justify-content-between p-md-5 p-3" >
+                <button class="p-2 pTFormCloseBtn">X</button>
+                <div class="col-12 col-lg-5 pTourFormICol">
+                    <label id="labelFor-pTourTvlExp" for="pTourTvlExp" class="mt-3">SELECT YOUR TRAVEL EXPERIENCE</label>
+                    <input type="text" class= "w-100" name="pTourTvlExp" id="pTourTvlExp" placeholder="Discovering the Larimar and the Deep South">
+                </div>
+                <div class="col-12 col-md-3 col-lg-2 pTourFormICol2">
+                    <label id="labelFor-pTourStartDt" for="pTourStartDt" class="mt-3">Select Date</label>
+                    <input type="date" class= "w-100" name="pTourStartDt" id="pTourStartDt"> 
+                </div>
+                <div class="col-12 col-md-3 col-lg-2 pTourFormCol3">
+                    <label id="labelFor-pTourAdultNo" for="pTourAdultNo" class="mt-3">Number of adults*</label>
+                    <input type="text" class= "w-100" name="pTourAdultNo" id="pTourAdultNo">
+                </div>
+                <div class="col-12 col-md-3 col-lg-2 pTourFormCol4">
+                    <label id="labelFor-pToruChildrenNo" for="pToruChildrenNo" class="mt-3">Number of Children</label>
+                    <input type="text" class= "w-100" name="pToruChildrenNo" id="pToruChildrenNo">
+                </div>
+            </div>
+        
+            <div class="row pTourFormRow2 g-0 justify-content-between p-md-5 p-3">
+                <div class="row g-0">
+                    <div class="col-12 p-2 col-md-3">
+                        <label id="labelFor-pTourFN" for="pTourFN">First Name*</label>
+                        <input class="w-100" type="text" name="pTourFN" id="pTourFN">
+                    </div>
+                    <div class="col-12 p-2 col-md-3">
+                        <label id="labelFor-pTourLN" for="pTourLN">Last Name*</label>
+                        <input class="w-100" type="text" name="pTourLN" id="pTourLN">
+                    </div>
+                    <div class="col-12 p-2 col-md-3">
+                        <label for="pTourEmail" id="labelFor-pTourEmail">Email*</label>
+                        <input class="w-100" type="text" name="pTourEmail" id="pTourEmail">
+                    </div>
+                    <div class="col-12 p-2 col-md-3">
+                        <label for="pTourPhn" id="labelFor-pTourPhn">Phone*</label>
+                        <input class="w-100" type="text" name="pTourPhn" id="pTourPhn">
+                    </div>
+                </div>
+                <div class="col-12 col-md-9 pe-2">
+                    <label for="pTourMsg" id="labelFor-pTourMsg">Message*</label>
+                    <textarea name="pTourMsg" id="pTourMsg" cols="30" rows="10" class="w-100"></textarea>
+                </div>
+                <div class="col-12 col-md-3 ps-2">
+                    <label for="pTourCountry" id="labelFor-pTourCountry">I'm From:*</label>
+                    <select id="pTourCountry" class="w-100" name="country">
+                        <option value="select">Select</option>
+                        <option value="india">India</option>
+                        <option value="usa">USA</option>
+                        <option value="Canada">Canada</option>
+                        <option value="France">France</option>
+                        <option value="Germany">Germany</option>
+                        <option value="Spain">Spain</option>
+                    </select>
+                    <br><br>
+                    <input type="checkbox" class="d-inline-block" name="pTourchk" id="pTourchk">
+                    <label class="d-inline">I have read and agree to the private policy</label>
+                </div>
+                <button type="submit" id="pTFormSubmitBtn" >SEND TRAVEL REQUEST</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!--------------------------------------------->
+    <!--          PrivateTour - Sec4             -->
+    <!--------------------------------------------->
+    <div class="pTourSec4MainContainer">
+        <div class="pTourSec4Header mb-5">
+            <h2 class="mb-4">Get Inspired</h2>
+            <p>What kind of unique excursion do you have in mind?We can always be reached for particular requirement and take care of additional arrangements for you.</p>
+        </div>
+        <div class="container-fluid pTourSec4">
+            <div class="row row1">
+              <div class="col-12 col-md-6 p-1">
+                <img src="img/pToruSec4Img1.webp" class="ptSec4-1" alt="pTourImages">
+                <div class="pTourSec4Items">
+                    <h5>Lorem ipsum dolor sit</h5>
+                    <p class="hidden ptSec4Para-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, nemo.</p>
+                </div>
+              </div>
+              <div class="col-12 col-md-3 p-1">
+                <img src="img/pToruSec4Img2.webp" class="ptSec4-2"alt="pTourImages">
+                <div class="pTourSec4Items">
+                    <h5>Lorem ipsum dolor</h5>
+                    <p class="hidden ptSec4Para-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, molestiae!</p>
+                </div>
+              </div>
+              <div class="col-12 col-md-3 p-1">
+                <img src="img/pToruSec4Img3.webp" class="ptSec4-3" alt="pTourImages">
+                <div class="pTourSec4Items">
+                    <h5>Lorem ipsum dolor</h5>
+                    <p class="hidden ptSec4Para-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, molestiae!</p>
+                </div>
+              </div>
+            </div>
+            <div class="row row2">
+              <div class="col-12 col-md-3 p-1">
+                <img src="img/pToruSec4Img4.webp" class="ptSec4-4" alt="pTourImages">
+                <div class="pTourSec4Items">
+                    <h5>Lorem ipsum dolor</h5>
+                    <p class="hidden ptSec4Para-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, molestiae!</p>
+                </div>
+              </div>
+              <div class="col-12 col-md-3 p-1">
+                <img src="img/pToruSec4Img5.webp" class="ptSec4-5" alt="pTourImages">
+                <div class="pTourSec4Items">
+                    <h5>Lorem ipsum dolor</h5>
+                    <p class="hidden ptSec4Para-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, molestiae!</p>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 p-1">
+                <img src="img/pToruSec4Img6.webp" class="ptSec4-6" alt="pTourImages">
+                <div class="pTourSec4Items">
+                    <h5>Lorem ipsum dolor sit</h5>
+                    <p class="hidden ptSec4Para-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, illo?</p>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------------------------------------------->
+    <!--          PrivateTour - Sec5             -->
+    <!--------------------------------------------->  
+
+    <div class="ptSec5Container pt-5 pb-5">
+        <div class="container gap-2 ptSec5 pt-5 pb-5">
+            <div class="row g-0">
+    
+                <div class="col-12 col-lg-6">
+                    <h2 class="ptSec5Heading">Our Guides & Local Expers</h2>
+                    <div class="row g-0 mt-5">
+                        <div class="col-12 col-md-4 mb-2">
+                            <img src="img/ptSec5Img1.jpg" alt="">
+                        </div>
+                        <div class="col-12 col-md-4 mb-2">
+                            <img src="img/ptSec5Img2.jpg" alt="">
+                        </div>
+                        <div class="col-12 col-md-4 mb-2">
+                            <img src="img/ptSec5Img3.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="row g-0 mt-3">
+                        <div class="col-12 col-md-4 mb-2">
+                            <img src="img/ptSec5Img4.jpg" alt="">
+                        </div>
+                        <div class="col-12 col-md-4 mb-2">
+                            <img src="img/ptSec5Img5.jpg" alt="">
+                        </div>
+                        <div class="col-12 col-md-4 mb-2">
+                            <img src="img/ptSec5Img6.jpg" alt="">
+                        </div>
+                    </div>
+                    <button type="submit" class="mt-5 mb-5 ptSec5Btn">MEET OUR GUIDES</button>
+                </div>
+                
+                <div class="col-12 col-lg-6">
+                    <div class="row g-0">
+                        <div class="ptSec5Review">
+                            <i class="fas fa-quote-right"></i>
+                            <h5 class="mb-3"><strong>Fantastic experience!</strong></h5>
+                            <p>Our guide (Jasmine) was very knowledgeable about the tour.  Her English was more than perfect and she explained everythin really well.  We were a couple on holiday for 7 days, this was by far our best experience.  I can only recommend this tour to everyone!...More</p>
+                            <br>
+                            <p style="color:#274b27; font-weight: 600; letter-spacing: 0.1rem; font-size: 1.2rem;">SAMG.</p>
+                            <br>
+                            <i class="fa fa-tripadvisor" style="font-size:40px"></i>
+                            <div class="d-inline-block ptSec5rate">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <h6 class="d-inline-block">Reviewed 1 week ago</h6>
+                        </div>
+                    </div>
+                    <div class="row g-0 align-items-center">
+                        <div class="col-6 triplogo">
+                            <img src="img/ptSec5logo.png" alt="">
+                        </div>
+                        <div class="col-6">
+                            <h5><strong>Ecotour Barahona</strong></h5>
+                            <div class="d-inline-block ptSec5rate">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div style="background: linear-gradient(-90deg, lightgray, lightgray 50%,  #478d47 50% )"></div>
+                            </div>
+                            <span>50 Reviews</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------------------------------------->
+    <!--            PrivateTour - Sec6          -->
+    <!-------------------------------------------->
+    <div class="row g-0 section7 pb-5 pt-5 align-items-center">
+        <div class="row sec7Items">
+          <div class="col-12 col-lg-2 col-md-2 item1">
+            <i class="fas fa-calendar-alt"></i>
+          </div>
+          <div class="col-12 col-lg-6 col-md-6 mb-3 mb-lg-0 mb-md-0 item2">
+            <p>
+              <span>Book Now</span><br>
+              Lorem ipsum dolor sit
+            </p>
+          </div>
+          <div class="col-12 col-lg-4 col-md-4 item3">
+            <button>CHECK THE DATES</button>
+          </div>
+        </div>
+      </div>
+  
+      <!-------------------------------------------->
+      <!--                 FOOTER                 -->
+      <!-------------------------------------------->
+      <div class="row g-0 footer align-items-start">
+        <div class="row justify-content-center p-5">
+  
+          <div class="col-lg footerCol1 ms-lg-5 mb-2 item1">
+            <img src="img/logoFull.jpeg" class="mb-3" alt=""><br>
+            <p class="small mb-2">Ecotour Barahona is your favourite specialist for authentic, unique and memorable round trips,day trips and activites in Southwest of Dominican Republic.</p>
+            <div class="col footerCol1Content">
+              <p class="font-monospace"> Dominican Republic</p> 
+              <p class="font-monospace"> Has its All</p> 
+              <div class="col"><img src="img/footerImg.png" class="d-inline-block smallImg" alt=""></div>
+            </div>
+            <p class="small mt-2 ">Travel environmentally friendly with us and discover the main destinations of the Dominican Republic.</p>
+            </div>
+  
+          <div class="col-sm item2 pt-3">
+            <p class="mb-2">ABOUT US</p>
+            <p class="mb-2"><span>ABOUT ECOTOUR</span></p>
+            <p class="mb-2"><span>BARAHONA</span></p>
+            <p class="mb-2"><span>OUR TEAM</span></p>
+            <p class="mb-2"><span>GUEST BOOK</span></p>
+            <p class="mb-2"><span>IMPRINT</span></p>
+          </div>
+  
+          <div class="col-sm item3 pt-3">
+            <p class="mb-2">CUSTOMER SERVICE</p>
+            <p class="mb-2"><span>BOOKNG CONDITIONS</span></p>
+            <p class="mb-2"><span>CONTACT-US</span></p>
+            <p class="mb-2"></p><span>FAQ'S</span></p>
+            <p class="mb-2"><span>LEGAL NOTICE</span></p>
+            <p class="mb-2"><span>PRIVACY POLICY</span></p>
+          </div>
+  
+          <div class="col-sm item4 pt-3">
+            <p class="mb-2">RESERVATION & BOOKINGS</p>
+            <p class="mb-3"><span>MONDAY TO FRIDAY <br> From 8:00 am to 8:00pm</span></p> 
+            <P class="mb-3"><span>SATURDAY to SUNDAY <br> From 9:00am to 5:00pm</span></P> 
+            <p class="mb-3"><span>Atlantic Standard Time <br> +1 (809) 856 2260</span></p> 
+          </div>
+  
+          <div class="col-md item5 pt-3">
+            <p>FOLLOW US</p>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+          </div>
+        </div>
+      </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="privateTour.js"></script>
+    <!-- <script src="script.js"></script> -->
+
+  </body>
+</html>
